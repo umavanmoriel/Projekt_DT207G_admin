@@ -1,4 +1,4 @@
-v<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
@@ -17,21 +17,23 @@ v<!DOCTYPE html>
     <main>
         <div>
             <h1>Personalinloggning</h1>
-            <form>
+            <form id="loginForm">
                 <div>
                     <label for="username">Användarnamn</label>
-                    <input name="username" type="text">
+                    <input name="username" id="username" type="text">
                 </div>
 
                 <div>
                     <label for="password">Lösenord</label>
-                    <input name="password" type="password">
+                    <input name="password" id="password" type="password">
                 </div>
 
-                <buttontype="submit">Logga in</button>
+                <button type="submit">Logga in</button>
             </form>
+            <p class="message" id="message"></p>
 
         </div>
     </main>
 </body>
+<script src="../js/login.js"></script>
 </html
