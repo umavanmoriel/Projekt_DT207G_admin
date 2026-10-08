@@ -1,19 +1,40 @@
 <!DOCTYPE html><html lang="sv"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administrationspanel</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li>Logotyp</li>
-                <li>Logga ut</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Adminpanel</h1>
-    </main>
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Administrationspanel</title>
+    </head>
+    <body>
+        <header>
+            <button id="logout-button">Logga ut</button>
+        </header>
+        <main>
+            <h1>Adminpanel</h1>
+            <h2>Lägg till rätt</h2>
+            <form id="dishForm">
+                <label for="dishName">Namn på rätt</label>
+                <input type="text" id="dishName" name="name" required="">
+                <div class="row">
+                    <div>
+                        <label for="dishCategory">Kategori</label>
+                        <select id="dishCategory" name="category" required="">
+                            <option value="">-- Välj kategori --</option>
+                            <option value="starters">Förrätter</option>
+                            <option value="mainCourses">Varmrätter</option>
+                            <option value="desserts">Efterrätter</option>
+                            <option value="drinks">Drycker</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="dishPrice">Pris (kr)</label>
+                        <input type="number" id="dishPrice" name="price" min="0" step="1" required="">
+                    </div>
+                </div>
+                <label for="dishDescription">Beskrivning</label>
+                <textarea id="dishDescription" name="description"></textarea>
+                <button type="submit">Lägg till rätt</button>
+                <div id="message"></div>
+            </form>
+        </main>
+        <script src="/admin.882a59c0.js"></script>
+    
 <script src="/admin.a43fa255.js"></script></body></html>

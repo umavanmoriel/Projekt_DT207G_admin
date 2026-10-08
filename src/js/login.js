@@ -67,3 +67,12 @@ form.addEventListener("submit", async (e) => {
         message.className = "message error";
     }
 });
+
+// Eventlistener för att logga ut
+const logoutButton = document.getElementById("logout-button");
+if (logoutButton) {
+    logoutButton.addEventListener("click", () => {
+        localStorage.removeItem("token");
+        window.location.href = "./login.html";
+    });
+}
