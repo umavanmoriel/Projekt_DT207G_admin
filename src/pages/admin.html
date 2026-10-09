@@ -4,18 +4,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Administrationspanel</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="admin-page">
         <header>
+            <nav>
+                <ul>
+                    <li>Vaviorka</li>
+                </ul>
+            </nav>
             <button id="logout-button">Logga ut</button>
         </header>
         <main>
             <h1>Adminpanel</h1>
-            <h2>Lägg till rätt</h2>
+
+            <h2 id="formTitle">Lägg till rätt</h2>
+
             <form id="dishForm">
+                <input type="hidden" id="dishId">
+
                 <label for="dishName">Namn på rätt</label>
                 <input type="text" id="dishName" name="name" required>
-                <div class="row">
+
+                <div>
                     <div>
                         <label for="dishCategory">Kategori</label>
                         <select id="dishCategory" name="category" required>
@@ -31,12 +45,20 @@
                         <input type="number" id="dishPrice" name="price" min="0" step="1" required>
                     </div>
                 </div>
+
                 <label for="dishDescription">Beskrivning</label>
                 <textarea id="dishDescription" name="description"></textarea>
-                <button type="submit">Lägg till rätt</button>
+
+                <button type="submit" id="submitButton">Lägg till rätt</button>
+                <button type="button" id="cancelButton" style="display:none;">Avbryt</button>
                 <div id="message"></div>
             </form>
+
+            <h2>Meny</h2>
+            <div id="menuContainer">
+
+            </div>
         </main>
         <script src="../js/admin.js"></script>
     </body>
-</html
+</html>
