@@ -1,0 +1,257 @@
+.admin-page {
+  background-color: #f5efe6;
+}
+
+.admin-page .main {
+  max-width: 1100px;
+}
+
+.admin-header {
+  color: #1f1610;
+  background-color: #fff;
+  border-bottom: 1px solid #e8dcc8;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  display: flex;
+  box-shadow: 0 1px 3px #3e2c1c0a;
+}
+
+.admin-nav-list-item {
+  color: #1f1610;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.admin-page .btn-logout {
+  color: #8b5e3c;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+  border: 1px solid #e0d6c4;
+  width: auto;
+  margin: 0;
+  padding: .55rem 1.3rem;
+  font-family: Inter, sans-serif;
+  font-size: .75rem;
+  font-weight: 500;
+  transition: all .3s;
+}
+
+.admin-page .btn-logout:hover {
+  color: #1f1610;
+  background-color: #fbf8f2;
+  border-color: #c9a227;
+}
+
+.logo-admin {
+  width: auto;
+  height: 100px;
+  display: block;
+}
+
+.form {
+  padding: 1.25rem 1.75rem 1rem;
+}
+
+.form .label {
+  letter-spacing: .15em;
+  margin-bottom: .25rem;
+  font-size: .65rem;
+}
+
+.form .input, .form .select, .form .textarea {
+  margin-bottom: .6rem;
+  padding: .55rem .85rem;
+  font-size: .9rem;
+}
+
+.form .textarea {
+  resize: none;
+  min-height: 50px;
+}
+
+.form > div {
+  grid-template-columns: 1fr 1fr;
+  gap: .75rem;
+  margin-bottom: 0;
+  display: grid;
+}
+
+.form > div > div {
+  margin-bottom: 0;
+}
+
+.form .btn {
+  margin-top: .2rem;
+  padding: .6rem 1.5rem;
+  font-size: .72rem;
+}
+
+.form .message {
+  margin-top: .5rem;
+  padding: .5rem .9rem;
+  font-size: .8rem;
+}
+
+.title {
+  margin-bottom: .4rem;
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin-top: 1.25rem;
+  margin-bottom: .6rem;
+  font-size: 1.2rem;
+}
+
+.menu-list {
+  margin-top: .75rem;
+  list-style: none;
+}
+
+.menu-category {
+  margin-bottom: 1.5rem;
+}
+
+.menu-category-title {
+  color: #1f1610;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e8dcc8;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: .6rem;
+  padding-bottom: .35rem;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: flex;
+}
+
+.menu-category-title:after {
+  content: "";
+  background: linear-gradient(90deg, #c9a227, #0000);
+  flex: 1;
+  height: 1px;
+}
+
+.menu-empty {
+  color: #8b5e3c;
+  padding: .6rem 0;
+  font-family: Cormorant Garamond, serif;
+  font-size: .9rem;
+  font-style: italic;
+}
+
+.menu-list ul {
+  list-style: none;
+}
+
+.menu-item {
+  background-color: #fff;
+  border: 1px solid #e8dcc8;
+  border-left: 3px solid #c9a227;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: .5rem;
+  padding: .8rem 1rem;
+  transition: all .3s;
+  display: flex;
+}
+
+.menu-item:hover {
+  border-color: #c9a227;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px #3e2c1c14;
+}
+
+.menu-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.menu-item-header {
+  align-items: baseline;
+  gap: .5rem;
+  display: flex;
+}
+
+.menu-item-name {
+  color: #1f1610;
+  flex-shrink: 0;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.menu-item-dots {
+  border-bottom: 1px dotted #c9a227;
+  flex: 1;
+  margin: 0 .5rem;
+  position: relative;
+  top: -4px;
+}
+
+.menu-item-price {
+  color: #1f1610;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-family: Cormorant Garamond, serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.menu-item-description {
+  color: #5a4a3a;
+  margin-top: .25rem;
+  font-size: .83rem;
+  line-height: 1.4;
+}
+
+.menu-item-actions {
+  flex-shrink: 0;
+  gap: .4rem;
+  display: flex;
+}
+
+.edit-btn, .delete-btn {
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: #0000;
+  padding: .4rem .75rem;
+  font-family: Inter, sans-serif;
+  font-size: .62rem;
+  font-weight: 600;
+  transition: all .25s;
+}
+
+.edit-btn {
+  color: #8b5e3c;
+  border: 1px solid #e0d6c4;
+}
+
+.edit-btn:hover {
+  color: #1f1610;
+  background-color: #fbf8f2;
+  border-color: #c9a227;
+}
+
+.delete-btn {
+  color: #a63a2e;
+  border: 1px solid #f5d9d5;
+}
+
+.delete-btn:hover {
+  color: #7a2820;
+  background-color: #faebe8;
+  border-color: #a63a2e;
+}
+/*# sourceMappingURL=admin.2a7a7745.css.map */

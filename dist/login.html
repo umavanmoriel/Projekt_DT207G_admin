@@ -2,40 +2,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logga in</title>
-    <link rel="stylesheet" href="/admin.c92073ef.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Aladin&amp;family=Cormorant+Garamond:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/admin.c92073ef.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li>Logotyp</li>
-            </ul>
-        </nav>
-    </header>
+<body class="page-login">
+    <main class="main">
+        <div class="login-container">
+            <div class="login-logo">
+                <img src="/logotyp.030c7906.png" alt="Vaviorka logotyp">
+            </div>
 
-    <main>
-        <div>
-            <h1>Personalinloggning</h1>
-            <form id="loginForm">
+            <h1 class="login-title">Personalinloggning</h1>
+
+            <form class="form" id="loginForm">
                 <div>
-                    <label for="username">Användarnamn</label>
-                    <input name="username" id="username" type="text">
+                    <label class="label" for="username">Användarnamn</label>
+                    <input class="input" name="username" id="username" type="text" required="">
                 </div>
 
                 <div>
-                    <label for="password">Lösenord</label>
-                    <input name="password" id="password" type="password">
+                    <label class="label" for="password">Lösenord</label>
+                    <input class="input" name="password" id="password" type="password" required="">
                 </div>
 
-                <button type="submit">Logga in</button>
+                <button class="btn btn-primary" type="submit">Logga in</button>
             </form>
-            <p class="message" id="message"></p>
 
+            <p class="message" id="message"></p>
         </div>
     </main>
 
-<script src="/login.000f99f6.js"></script>
+    <script src="/login.000f99f6.js"></script>
+
 <script src="/login.e00df216.js"></script></body></html>

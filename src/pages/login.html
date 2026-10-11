@@ -4,36 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logga in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li>Logotyp</li>
-            </ul>
-        </nav>
-    </header>
+<body class="page-login">
+    <main class="main">
+        <div class="login-container">
+            <div class="login-logo">
+                <img src="../../assets/images/logotyp.png" alt="Vaviorka logotyp">
+            </div>
 
-    <main>
-        <div>
-            <h1>Personalinloggning</h1>
-            <form id="loginForm">
+            <h1 class="login-title">Personalinloggning</h1>
+
+            <form class="form" id="loginForm">
                 <div>
-                    <label for="username">Användarnamn</label>
-                    <input name="username" id="username" type="text">
+                    <label class="label" for="username">Användarnamn</label>
+                    <input class="input" name="username" id="username" type="text" required>
                 </div>
 
                 <div>
-                    <label for="password">Lösenord</label>
-                    <input name="password" id="password" type="password">
+                    <label class="label" for="password">Lösenord</label>
+                    <input class="input" name="password" id="password" type="password" required>
                 </div>
 
-                <button type="submit">Logga in</button>
+                <button class="btn btn-primary" type="submit">Logga in</button>
             </form>
-            <p class="message" id="message"></p>
 
+            <p class="message" id="message"></p>
         </div>
     </main>
+
+    <script src="../js/login.js"></script>
 </body>
-<script src="../js/login.js"></script>
-</html
+</html>

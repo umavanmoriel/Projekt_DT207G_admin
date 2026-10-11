@@ -3,34 +3,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Administrationspanel</title>
         <link rel="stylesheet" href="/admin.c92073ef.css">
+        <link rel="stylesheet" href="/admin.2a7a7745.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-        <link href="https://fonts.googleapis.com/css2?family=Aladin&amp;family=Cormorant+Garamond:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">    
     </head>
     <body class="admin-page">
-        <header>
+        <header class="admin-header">
             <nav>
-                <ul>
-                    <li>Vaviorka</li>
+                <ul class="nav-list">
+                    <li class="admin-nav-list-item">
+                        <img class="logo-admin" src="/logotyp.030c7906.png" alt="Vaviorka logotyp" height="44">
+                    </li>
                 </ul>
             </nav>
-            <button id="logout-button">Logga ut</button>
+            <button class="btn-logout" id="logout-button">Logga ut</button>
         </header>
-        <main>
-            <h1>Adminpanel</h1>
+        <main class="main">
+            <h1 class="title">Adminpanel</h1>
 
-            <h2 id="formTitle">Lägg till rätt</h2>
+            <h2 class="subtitle" id="formTitle">Lägg till rätt</h2>
 
-            <form id="dishForm">
+            <form class="form" id="dishForm">
                 <input type="hidden" id="dishId">
 
-                <label for="dishName">Namn på rätt</label>
-                <input type="text" id="dishName" name="name" required="">
+                <label class="label" for="dishName">Namn på rätt</label>
+                <input class="input" type="text" id="dishName" name="name" required="">
 
                 <div>
                     <div>
-                        <label for="dishCategory">Kategori</label>
-                        <select id="dishCategory" name="category" required="">
+                        <label class="label" for="dishCategory">Kategori</label>
+                        <select class="select" id="dishCategory" name="category" required="">
                             <option value="">-- Välj kategori --</option>
                             <option value="starters">Förrätter</option>
                             <option value="mainCourses">Varmrätter</option>
@@ -38,22 +41,22 @@
                             <option value="drinks">Drycker</option>
                         </select>
                     </div>
-                    <div>
-                        <label for="dishPrice">Pris (kr)</label>
-                        <input type="number" id="dishPrice" name="price" min="0" step="1" required="">
+                    <div class="form-col">
+                        <label class="label" for="dishPrice">Pris (kr)</label>
+                        <input class="input" type="number" id="dishPrice" name="price" min="0" step="1" required="">
                     </div>
                 </div>
 
-                <label for="dishDescription">Beskrivning</label>
-                <textarea id="dishDescription" name="description"></textarea>
+                <label class="label" for="dishDescription">Beskrivning</label>
+                <textarea class="textarea" id="dishDescription" name="description"></textarea>
 
-                <button type="submit" id="submitButton">Lägg till rätt</button>
-                <button type="button" id="cancelButton" style="display: none">Avbryt</button>
-                <div id="message"></div>
+                <button class="btn btn-primary" type="submit" id="submitButton">Lägg till rätt</button>
+                <button class="btn btn-secondary" type="button" id="cancelButton" style="display: none">Avbryt</button>
+                <div class="message" id="message"></div>
             </form>
 
-            <h2>Meny</h2>
-            <div id="menuContainer">
+            <h2 class="subtitle">Meny</h2>
+            <div class="menu-list" id="menuContainer">
 
             </div>
         </main>
