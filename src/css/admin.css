@@ -1,11 +1,14 @@
+/* Bakgrunden för admin-sidan */
 .admin-page {
     background-color: #F5EFE6;
 }
 
+/* Bredare innehåll på admin-sidorna */
 .admin-page .main {
     max-width: 1100px;
 }
 
+/* Header på admin sida */
 .admin-header {
     background-color: #FFFFFF;
     color: #1F1610;
@@ -13,20 +16,63 @@
     box-shadow: 0 1px 3px rgba(62, 44, 28, 0.04);
     padding: 1rem 2.5rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.admin-nav-list-item {
-    color: #1F1610;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6rem;
-    font-weight: 600;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
+/* Navigering på admin-sidan */
+.admin-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
 }
 
-.admin-page .btn-logout {
+/* Logotypen på vänster sida */
+.logo-admin {
+    height: 60px;
+    width: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
+/* Listan med länkar på höger sida */
+.admin-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: auto;
+}
+
+/* Listobjekten */
+.admin-nav-list-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Länkar i adminmenyn */
+.admin-nav-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #1F1610;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* Länkar blir guld vid hover */
+.admin-nav-link:hover {
+    color: #C9A227;
+    border-bottom-color: #C9A227;
+}
+
+/* Logga ut-knappen */
+.btn-logout {
     background: transparent;
     color: #8B5E3C;
     border: 1px solid #E0D6C4;
@@ -42,41 +88,41 @@
     margin: 0;
 }
 
-.admin-page .btn-logout:hover {
+/* Hover för logga ut-knapp */
+.btn-logout:hover {
     color: #1F1610;
     border-color: #C9A227;
     background-color: #FBF8F2;
 }
 
-.logo-admin {
-    height: 100px;
-    width: auto;
-    display: block;
-}
-
+/* Formulärets padding */
 .form {
     padding: 1.25rem 1.75rem 1rem;
 }
 
-.form .label {
+/* Labels i formuläret */
+.label {
     margin-bottom: 0.25rem;
     font-size: 0.65rem;
     letter-spacing: 0.15em;
 }
 
-.form .input,
-.form .select,
-.form .textarea {
+/* Fält i formuläret */
+.input,
+.select,
+.textarea {
     padding: 0.55rem 0.85rem;
     font-size: 0.9rem;
     margin-bottom: 0.6rem;
 }
 
-.form .textarea {
+/* Textarea */
+.textarea {
     min-height: 50px;
     resize: none;
 }
 
+/* Rad med två fält sida vid sida */
 .form > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -88,38 +134,45 @@
     margin-bottom: 0;
 }
 
-.form .btn {
+/* Gemmensam för alla knappar */
+.btn {
     padding: 0.6rem 1.5rem;
     font-size: 0.72rem;
     margin-top: 0.2rem;
 }
 
-.form .message {
+/* Meddelande i formuläret för fel eller bekräftelse */
+.message {
     margin-top: 0.5rem;
     padding: 0.5rem 0.9rem;
     font-size: 0.8rem;
 }
 
+/* Titel på admin sida */
 .title {
     font-size: 2rem;
     margin-bottom: 0.4rem;
 }
 
+/*h2 subtitel på admin sida */
 .subtitle {
     margin-top: 1.25rem;
     margin-bottom: 0.6rem;
     font-size: 1.2rem;
 }
 
+/* Lista med meny */
 .menu-list {
     margin-top: 0.75rem;
     list-style: none;
 }
 
+/* Kategori-sektion för rätter */
 .menu-category {
     margin-bottom: 1.5rem;
 }
 
+/* Kategori-rubrik med guldlinje */
 .menu-category-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.25rem;
@@ -135,6 +188,7 @@
     gap: 1rem;
 }
 
+/* Guldlinje som sträcker sig efter kategori-rubriken */
 .menu-category-title::after {
     content: "";
     flex: 1;
@@ -142,6 +196,7 @@
     background: linear-gradient(90deg, #C9A227, transparent);
 }
 
+/* Meddelande när kategori är tom */
 .menu-empty {
     font-family: 'Cormorant Garamond', serif;
     font-size: 0.9rem;
@@ -150,10 +205,12 @@
     padding: 0.6rem 0;
 }
 
+/* Tar bort punktmarkering i listor */
 .menu-list ul {
     list-style: none;
 }
 
+/* En menyrad */
 .menu-item {
     background-color: #FFFFFF;
     border: 1px solid #E8DCC8;
@@ -167,23 +224,27 @@
     transition: all 0.3s ease;
 }
 
+/* Lyfter menyraden och ger guld-kant vid hover */
 .menu-item:hover {
     border-color: #C9A227;
     box-shadow: 0 8px 24px rgba(62, 44, 28, 0.08);
     transform: translateY(-2px);
 }
 
+/* Info-delen (namn, pris, beskrivning) */
 .menu-item-info {
     flex: 1;
     min-width: 0;
 }
 
+/* Rad med namn + prickar + pris */
 .menu-item-header {
     display: flex;
     align-items: baseline;
     gap: 0.5rem;
 }
 
+/* Rättens namn */
 .menu-item-name {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.1rem;
@@ -192,6 +253,7 @@
     flex-shrink: 0;
 }
 
+/* Prickade linjer mellan namn och pris */
 .menu-item-dots {
     flex: 1;
     border-bottom: 1px dotted #C9A227;
@@ -200,6 +262,7 @@
     top: -4px;
 }
 
+/* Rättens pris */
 .menu-item-price {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.1rem;
@@ -209,6 +272,7 @@
     flex-shrink: 0;
 }
 
+/* Rättens beskrivning */
 .menu-item-description {
     font-size: 0.83rem;
     color: #5A4A3A;
@@ -216,12 +280,14 @@
     line-height: 1.4;
 }
 
+/* Höger sida med knappar */
 .menu-item-actions {
     display: flex;
     gap: 0.4rem;
     flex-shrink: 0;
 }
 
+/* Knappar i menyraden */
 .edit-btn,
 .delete-btn {
     padding: 0.4rem 0.75rem;
@@ -236,22 +302,26 @@
     white-space: nowrap;
 }
 
+/* Redigera-knappen */
 .edit-btn {
     border: 1px solid #E0D6C4;
     color: #8B5E3C;
 }
 
+/* Hover för redigera-knapp */
 .edit-btn:hover {
     border-color: #C9A227;
     color: #1F1610;
     background-color: #FBF8F2;
 }
 
+/* Ta bort-knappen */
 .delete-btn {
     border: 1px solid #F5D9D5;
     color: #A63A2E;
 }
 
+/* Hover för ta bort-knapp */
 .delete-btn:hover {
     background-color: #FAEBE8;
     border-color: #A63A2E;

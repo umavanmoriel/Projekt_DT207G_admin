@@ -22,28 +22,6 @@ body {
   display: flex;
 }
 
-.nav-list {
-  align-items: center;
-  gap: 2rem;
-  list-style: none;
-  display: flex;
-}
-
-.nav-list-item {
-  color: #f5efe6;
-  letter-spacing: .25em;
-  text-transform: uppercase;
-  font-family: Cormorant Garamond, serif;
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-
-.logo {
-  width: auto;
-  height: 150px;
-  display: block;
-}
-
 .btn {
   letter-spacing: .22em;
   text-transform: uppercase;

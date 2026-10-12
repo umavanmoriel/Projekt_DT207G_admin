@@ -1,9 +1,11 @@
+/* Tar bort standardmarginaler */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Grundstil för hela sidan */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: #F5EFE6;
@@ -12,6 +14,7 @@ body {
     min-height: 100vh;
 }
 
+/* Header för login sida*/
 .header {
     background-color: #1F1610;
     color: #F5EFE6;
@@ -22,28 +25,7 @@ body {
     border-bottom: 1px solid rgba(201, 162, 39, 0.25);
 }
 
-.nav-list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-.nav-list-item {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #F5EFE6;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-}
-
-.logo {
-    height: 150px;
-    width: auto;
-    display: block;
-}
-
+/* Grundstil för knappar */
 .btn {
     font-family: 'Inter', sans-serif;
     font-size: 0.78rem;
@@ -58,35 +40,41 @@ body {
     margin-top: 0.5rem;
 }
 
+/* Primär knapp med mörk bakgrund */
 .btn-primary {
     background-color: #1F1610;
     color: #F5EFE6;
 }
 
+/* Primär knapp blir guld vid hover */
 .btn-primary:hover {
     background-color: #C9A227;
     color: #1F1610;
     transform: translateY(-2px);
 }
 
+/* Sekundär knapp- transparent med kant */
 .btn-secondary {
     background-color: transparent;
     color: #8B5E3C;
     border: 1px solid #E0D6C4;
 }
 
+/* Sekundär knapp– guld-kant vid hover */
 .btn-secondary:hover {
     background-color: #F5EFE6;
     border-color: #C9A227;
     color: #1F1610;
 }
 
+/* Standardbredd för innehållet på publika sidor */
 .main {
     max-width: 720px;
     margin: 3rem auto;
     padding: 0 1.5rem;
 }
 
+/* Stor rubrik i Cormorant */
 .title {
     font-family: 'Cormorant Garamond', serif;
     font-size: 2.8rem;
@@ -98,6 +86,7 @@ body {
     line-height: 1.1;
 }
 
+/* Underrubrik i guld-brun */
 .subtitle {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.5rem;
@@ -110,6 +99,7 @@ body {
     text-align: center;
 }
 
+/* Formulärets vita ruta med skugga */
 .form {
     background-color: #FFFFFF;
     padding: 2.5rem 2rem;
@@ -117,6 +107,7 @@ body {
     box-shadow: 0 1px 3px rgba(62, 44, 28, 0.04), 0 12px 40px rgba(62, 44, 28, 0.08);
 }
 
+/* Etiketter för fälten */
 .label {
     display: block;
     font-family: 'Inter', sans-serif;
@@ -128,6 +119,7 @@ body {
     text-transform: uppercase;
 }
 
+/* Textfält, dropdown och textarea */
 .input,
 .select,
 .textarea {
@@ -142,12 +134,14 @@ body {
     transition: all 0.25s ease;
 }
 
+/* Ljusare kant vid hover */
 .input:hover,
 .select:hover,
 .textarea:hover {
     border-color: #C9A227;
 }
 
+/* Mörk kant när fältet är i fokus */
 .input:focus,
 .select:focus,
 .textarea:focus {
@@ -157,11 +151,13 @@ body {
     box-shadow: 0 0 0 1px #1F1610;
 }
 
+/* Textområdet för längre text */
 .textarea {
     min-height: 110px;
     resize: vertical;
 }
 
+/* Meddelanderuta som är dold från början */
 .message {
     margin-top: 1.2rem;
     padding: 0.9rem 1.2rem;
@@ -172,6 +168,7 @@ body {
     display: none;
 }
 
+/* Grön ruta vid lyckat meddelande */
 .message.success {
     display: block;
     background-color: #F0F7E8;
@@ -179,6 +176,7 @@ body {
     border-left: 3px solid #6B8E5A;
 }
 
+/* Röd ruta vid felmeddelande */
 .message.error {
     display: block;
     background-color: #FAEBE8;
@@ -186,6 +184,7 @@ body {
     border-left: 3px solid #A63A2E;
 }
 
+/* Login-sidan fyller hela höjden */
 .page-login {
     display: flex;
     flex-direction: column;
@@ -193,6 +192,7 @@ body {
     background-color: #F5EFE6;
 }
 
+/* Main centreras vertikalt och horisontellt på login */
 .page-login .main {
     flex: 1;
     display: flex;
@@ -203,24 +203,28 @@ body {
     padding: 2rem 1.5rem;
 }
 
+/* Behållaren för login-formuläret */
 .login-container {
     width: 100%;
     max-width: 440px;
     text-align: center;
 }
 
+/* Logotypen centreras högst upp */
 .login-logo {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
 }
 
+/* Logotypen på login sida */
 .login-logo img {
     height: 150px;
     width: auto;
     display: block;
 }
 
+/* Rubriken "Personalinloggning" */
 .login-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.3rem;
@@ -233,6 +237,7 @@ body {
     position: relative;
 }
 
+/* Guldlinje under rubriken */
 .login-title::after {
     content: "";
     position: absolute;
@@ -244,6 +249,7 @@ body {
     background: #C9A227;
 }
 
+/* Formuläret på login har ingen egen ruta */
 .login-container .form {
     background: transparent;
     padding: 0;
@@ -252,26 +258,31 @@ body {
     text-align: left;
 }
 
+/* Etiketterna på login placeras till vänster */
 .login-container .label {
     text-align: left;
 }
 
+/* Fälten på login har vit bakgrund */
 .login-container .input {
     background-color: #FFFFFF;
     border: 1px solid #E0D6C4;
 }
 
+/* Guld-kant på login-fälten vid fokus */
 .login-container .input:focus {
     border-color: #C9A227;
     box-shadow: 0 0 0 1px #C9A227;
     background-color: #FFFFFF;
 }
 
+/* Knappen på login har extra letter-spacing */
 .login-container .btn {
     margin-top: 1rem;
     letter-spacing: 0.25em;
 }
 
+/* Meddelandet på login har lite marginal upptill */
 .login-container .message {
     margin-top: 1rem;
 }

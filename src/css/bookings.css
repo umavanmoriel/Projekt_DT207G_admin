@@ -1,0 +1,95 @@
+/* Tar bort standardmarginaler */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Grundstil för hela sidan */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #F5EFE6;
+    color: #2B1F14;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Standardbredd för innehållet på publika sidor */
+.main {
+    max-width: 720px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Wrapper runt tabellen för scroll på små skärmar */
+.table-wrapper {
+    width: 100%;
+    margin-top: 1.5rem;
+    background-color: #FFFFFF;
+    border: 1px solid #E8DCC8;
+    box-shadow: 0 12px 40px rgba(62, 44, 28, 0.08);
+    overflow-x: auto;
+}
+
+/* Tabell med bordsbokningar */
+.bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+}
+
+/* Rubrik */
+.bookings-table thead {
+    background-color: #1F1610;
+}
+
+/* Rubrikceller */
+.bookings-table th {
+    padding: 0.9rem 1rem;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #C9A227;
+    white-space: nowrap;
+}
+
+/* Dataceller */
+.bookings-table td {
+    padding: 0.9rem 1rem;
+    color: #3E2C1C;
+    border-bottom: 1px solid #F0E8DA;
+    vertical-align: top;
+}
+
+/* Tar bort kantlinjen på sista raden */
+.bookings-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Ljusare bakgrund när man hovrar över en rad */
+.bookings-table tbody tr:hover {
+    background-color: #FBF8F2;
+}
+
+/* Felmeddelande i tabellen */
+.bookings-table td.error {
+    color: #A63A2E;
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+}
+
+/* Rubriken "Bokningsförfrågningar" */
+.booking-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1F1610;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}

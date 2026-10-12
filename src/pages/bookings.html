@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bordsbokningar</title>
+        <link rel="stylesheet" href="../css/admin.css">
+        <link rel="stylesheet" href="../css/bookings.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">    
+    </head>
+    <body class="admin-page">
+        <header class="admin-header">
+            <nav class="admin-nav">
+                <img class="logo-admin" src="../../assets/images/logotyp.png" alt="Vaviorka logotyp" height="44">
+                <ul class="admin-nav-list">
+                    <li class="admin-nav-list-item"><a class="admin-nav-link" href="../pages/admin.html">Hantera meny</a></li>
+                    <li class="admin-nav-list-item"><a class="admin-nav-link" href="../pages/bookings.html">Hantera bordsbokningar</a></li>
+                    <li><button class="btn-logout" id="logout-button">Logga ut</button></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <h1 class="booking-title">Bokningsförfrågningar</h1>
+
+            <div class="table-wrapper">
+                <table class="bookings-table">
+                    <thead>
+                        <tr>
+                            <th>Namn</th>
+                            <th>Telefon</th>
+                            <th>Datum</th>
+                            <th>Tid</th>
+                            <th>Gäster</th>
+                            <th>Meddelande</th>
+                            <th>Skickad</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bookingList">
+
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <script src="../js/bookings.js"></script>
+    </body>
+</html>

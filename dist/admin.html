@@ -10,14 +10,14 @@
     </head>
     <body class="admin-page">
         <header class="admin-header">
-            <nav>
-                <ul class="nav-list">
-                    <li class="admin-nav-list-item">
-                        <img class="logo-admin" src="/logotyp.030c7906.png" alt="Vaviorka logotyp" height="44">
-                    </li>
+            <nav class="admin-nav">
+                <img class="logo-admin" src="/logotyp.030c7906.png" alt="Vaviorka logotyp" height="44">
+                <ul class="admin-nav-list">
+                    <li class="admin-nav-list-item"><a class="admin-nav-link" href="#menu">Hantera meny</a></li>
+                    <li class="admin-nav-list-item"><a class="admin-nav-link" href="/bookings.html">Hantera bordsbokningar</a></li>
+                    <li><button class="btn-logout" id="logout-button">Logga ut</button></li>
                 </ul>
             </nav>
-            <button class="btn-logout" id="logout-button">Logga ut</button>
         </header>
         <main class="main">
             <h1 class="title">Adminpanel</h1>
@@ -55,7 +55,7 @@
                 <div class="message" id="message"></div>
             </form>
 
-            <h2 class="subtitle">Meny</h2>
+            <h2 id="menu" class="subtitle">Hantera meny</h2>
             <div class="menu-list" id="menuContainer">
 
             </div>

@@ -10,23 +10,59 @@
   color: #1f1610;
   background-color: #fff;
   border-bottom: 1px solid #e8dcc8;
-  justify-content: space-between;
   align-items: center;
   padding: 1rem 2.5rem;
   display: flex;
   box-shadow: 0 1px 3px #3e2c1c0a;
 }
 
-.admin-nav-list-item {
-  color: #1f1610;
-  letter-spacing: .25em;
-  text-transform: uppercase;
-  font-family: Cormorant Garamond, serif;
-  font-size: 1.6rem;
-  font-weight: 600;
+.admin-nav {
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  display: flex;
 }
 
-.admin-page .btn-logout {
+.logo-admin {
+  flex-shrink: 0;
+  width: auto;
+  height: 60px;
+  display: block;
+}
+
+.admin-nav-list {
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+}
+
+.admin-nav-list-item {
+  align-items: center;
+  display: flex;
+}
+
+.admin-nav-link {
+  color: #1f1610;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #0000;
+  padding-bottom: 4px;
+  font-family: Inter, sans-serif;
+  font-size: .8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.admin-nav-link:hover {
+  color: #c9a227;
+  border-bottom-color: #c9a227;
+}
+
+.btn-logout {
   color: #8b5e3c;
   letter-spacing: .2em;
   text-transform: uppercase;
@@ -42,35 +78,29 @@
   transition: all .3s;
 }
 
-.admin-page .btn-logout:hover {
+.btn-logout:hover {
   color: #1f1610;
   background-color: #fbf8f2;
   border-color: #c9a227;
-}
-
-.logo-admin {
-  width: auto;
-  height: 100px;
-  display: block;
 }
 
 .form {
   padding: 1.25rem 1.75rem 1rem;
 }
 
-.form .label {
+.label {
   letter-spacing: .15em;
   margin-bottom: .25rem;
   font-size: .65rem;
 }
 
-.form .input, .form .select, .form .textarea {
+.input, .select, .textarea {
   margin-bottom: .6rem;
   padding: .55rem .85rem;
   font-size: .9rem;
 }
 
-.form .textarea {
+.textarea {
   resize: none;
   min-height: 50px;
 }
@@ -86,13 +116,13 @@
   margin-bottom: 0;
 }
 
-.form .btn {
+.btn {
   margin-top: .2rem;
   padding: .6rem 1.5rem;
   font-size: .72rem;
 }
 
-.form .message {
+.message {
   margin-top: .5rem;
   padding: .5rem .9rem;
   font-size: .8rem;

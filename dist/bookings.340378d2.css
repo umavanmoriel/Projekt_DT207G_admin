@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #2b1f14;
+  background-color: #f5efe6;
+  min-height: 100vh;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+}
+
+.main {
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.table-wrapper {
+  background-color: #fff;
+  border: 1px solid #e8dcc8;
+  width: 100%;
+  margin-top: 1.5rem;
+  overflow-x: auto;
+  box-shadow: 0 12px 40px #3e2c1c14;
+}
+
+.bookings-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: Inter, sans-serif;
+  font-size: .88rem;
+}
+
+.bookings-table th {
+  text-align: left;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: #c9a227;
+  white-space: nowrap;
+  padding: .9rem 1rem;
+  font-family: Inter, sans-serif;
+  font-size: .7rem;
+  font-weight: 600;
+}
+
+.bookings-table td {
+  color: #3e2c1c;
+  vertical-align: top;
+  border-bottom: 1px solid #f0e8da;
+  padding: .9rem 1rem;
+}
+
+.bookings-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.bookings-table tbody tr:hover {
+  background-color: #fbf8f2;
+}
+
+.bookings-table td.error {
+  color: #a63a2e;
+  text-align: center;
+  padding: 2rem;
+  font-style: italic;
+}
+
+.booking-title {
+  color: #1f1610;
+  letter-spacing: .02em;
+  text-align: center;
+  margin-bottom: .5rem;
+  font-family: Cormorant Garamond, serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=bookings.340378d2.css.map */
