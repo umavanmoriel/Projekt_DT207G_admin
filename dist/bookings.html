@@ -1,29 +1,37 @@
 <!DOCTYPE html><html lang="sv"><head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Sidans titel -->
         <title>Bordsbokningar</title>
+        <!-- Stilmallar och typsnitt -->
         <link rel="stylesheet" href="/admin.2a7a7745.css">
         <link rel="stylesheet" href="/bookings.340378d2.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
     </head>
     <body class="admin-page">
+        <!-- Sidhuvud med logotyp och navigering -->
         <header class="admin-header">
             <nav class="admin-nav">
+                <!-- Logotyp -->
                 <img class="logo-admin" src="/logotyp.030c7906.png" alt="Vaviorka logotyp" height="44">
+                <!-- Navigeringslänkar och logga ut-knapp -->
                 <ul class="admin-nav-list">
                     <li class="admin-nav-list-item"><a class="admin-nav-link" href="/admin.html">Hantera meny</a></li>
                     <li class="admin-nav-list-item"><a class="admin-nav-link" href="/bookings.html">Hantera bordsbokningar</a></li>
-                    <li><button class="btn-logout" id="logout-button">Logga ut</button></li>
+                    <li><button type="button" class="btn-logout" id="logout-button">Logga ut</button></li>
                 </ul>
             </nav>
         </header>
-        <main class="main">
-            <h1 class="booking-title">Bokningsförfrågningar</h1>
 
+        <main class="main">
+            <!-- Sidans rubrik -->
+            <h1 class="booking-title">Bokningsförfrågningar</h1>
+            <!-- Tabell som visar alla bokningar -->
             <div class="table-wrapper">
                 <table class="bookings-table">
+                    <!-- Rubrikrad för kolumnerna -->
                     <thead>
                         <tr>
                             <th>Namn</th>
@@ -35,12 +43,13 @@
                             <th>Skickad</th>
                         </tr>
                     </thead>
+                    <!-- Rader med bokningar fylls av JavaScript -->
                     <tbody id="bookingList">
-
                     </tbody>
                 </table>
             </div>
         </main>
+        <!-- JavaScript som hämtar och visar bokningar -->
         <script src="/bookings.7aa219ad.js"></script>
     
 <script src="/bookings.249f1122.js"></script></body></html>

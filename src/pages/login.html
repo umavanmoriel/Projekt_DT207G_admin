@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sidans titel -->
     <title>Logga in</title>
+    <!-- Typsnitt och stilmall -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -11,31 +13,34 @@
 </head>
 <body class="page-login">
     <main class="main">
+        <!-- Behållare för inloggningsformuläret -->
         <div class="login-container">
+            <!-- Logotyp centrerad högst upp -->
             <div class="login-logo">
                 <img src="../../assets/images/logotyp.png" alt="Vaviorka logotyp">
             </div>
-
+            <!-- Rubrik för inloggning -->
             <h1 class="login-title">Personalinloggning</h1>
-
+            <!-- Formulär för inloggning -->
             <form class="form" id="loginForm">
+                <!-- Användarnamn -->
                 <div>
                     <label class="label" for="username">Användarnamn</label>
                     <input class="input" name="username" id="username" type="text" required>
                 </div>
-
+                <!-- Lösenord -->
                 <div>
                     <label class="label" for="password">Lösenord</label>
                     <input class="input" name="password" id="password" type="password" required>
                 </div>
-
+                <!-- Skicka-knapp -->
                 <button class="btn btn-primary" type="submit">Logga in</button>
             </form>
-
+            <!-- Meddelande som visas vid fel eller lyckad inloggning -->
             <p class="message" id="message"></p>
         </div>
     </main>
-
+    <!-- JavaScript som hanterar inloggningen -->
     <script src="../js/login.js"></script>
 </body>
 </html>

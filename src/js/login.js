@@ -36,9 +36,12 @@ form.addEventListener("submit", async (e) => {
             body: JSON.stringify({ username, password })
         });
 
+        // Tolkar svaret från servern som JSON
         const data = await res.json();
 
+        // Om servern svarade med ett fel
         if (!res.ok) {
+            // Visar felmeddelandet från servern eller ett standardmeddelande
             message.textContent = data.error || "Inloggningen misslyckades";
             message.className = "message error";
             return;

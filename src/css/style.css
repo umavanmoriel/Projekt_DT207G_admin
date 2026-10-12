@@ -7,7 +7,7 @@
 
 /* Grundstil för hela sidan */
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: #F5EFE6;
     color: #2B1F14;
     line-height: 1.6;

@@ -14,7 +14,7 @@
     color: #1F1610;
     border-bottom: 1px solid #E8DCC8;
     box-shadow: 0 1px 3px rgba(62, 44, 28, 0.04);
-    padding: 1rem 2.5rem;
+    padding: 0rem 2.5rem;
     display: flex;
     align-items: center;
 }
@@ -30,7 +30,7 @@
 
 /* Logotypen på vänster sida */
 .logo-admin {
-    height: 60px;
+    height: 100px;
     width: auto;
     display: block;
     flex-shrink: 0;
@@ -54,13 +54,12 @@
 /* Länkar i adminmenyn */
 .admin-nav-link {
     font-family: 'Inter', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 500;
     color: #1F1610;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     text-decoration: none;
-    padding-bottom: 4px;
     border-bottom: 1px solid transparent;
     transition: all 0.3s ease;
 }

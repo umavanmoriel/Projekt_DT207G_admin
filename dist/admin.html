@@ -1,35 +1,41 @@
 <!DOCTYPE html><html lang="sv"><head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Sidans titel -->
         <title>Administrationspanel</title>
+        <!-- Stilmallar och typsnitt -->
         <link rel="stylesheet" href="/admin.c92073ef.css">
         <link rel="stylesheet" href="/admin.2a7a7745.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
     </head>
     <body class="admin-page">
+        <!-- Sidhuvud med logotyp och navigering -->
         <header class="admin-header">
             <nav class="admin-nav">
+                <!-- Logotyp -->
                 <img class="logo-admin" src="/logotyp.030c7906.png" alt="Vaviorka logotyp" height="44">
+                <!-- Navigeringslänkar och logga ut-knapp -->
                 <ul class="admin-nav-list">
                     <li class="admin-nav-list-item"><a class="admin-nav-link" href="#menu">Hantera meny</a></li>
                     <li class="admin-nav-list-item"><a class="admin-nav-link" href="/bookings.html">Hantera bordsbokningar</a></li>
-                    <li><button class="btn-logout" id="logout-button">Logga ut</button></li>
+                    <li><button type="button" class="btn-logout" id="logout-button">Logga ut</button></li>
                 </ul>
             </nav>
         </header>
         <main class="main">
+            <!-- Sidans rubrik -->
             <h1 class="title">Adminpanel</h1>
-
+            <!-- Formulär för att lägga till eller redigera rätter -->
             <h2 class="subtitle" id="formTitle">Lägg till rätt</h2>
-
             <form class="form" id="dishForm">
+                <!-- Dolt fält som sparar rättens id vid redigering -->
                 <input type="hidden" id="dishId">
-
+                <!-- Namn på rätt -->
                 <label class="label" for="dishName">Namn på rätt</label>
                 <input class="input" type="text" id="dishName" name="name">
-
+                <!-- Kategori och pris -->
                 <div>
                     <div>
                         <label class="label" for="dishCategory">Kategori</label>
@@ -47,19 +53,28 @@
                     </div>
                 </div>
 
+                <!-- Beskrivning -->
                 <label class="label" for="dishDescription">Beskrivning</label>
                 <textarea class="textarea" id="dishDescription" name="description"></textarea>
 
+                <!-- Skicka-knapp -->
                 <button class="btn btn-primary" type="submit" id="submitButton">Lägg till rätt</button>
+
+                <!-- Avbryt-knapp (visas bara vid redigering) -->
                 <button class="btn btn-secondary" type="button" id="cancelButton" style="display: none">Avbryt</button>
+
+                <!-- Meddelande som visas efter skickat formulär -->
                 <div class="message" id="message"></div>
             </form>
-
-            <h2 id="menu" class="subtitle">Hantera meny</h2>
-            <div class="menu-list" id="menuContainer">
-
-            </div>
+            <!-- Sektion för att visa alla rätter i menyn -->
+            <section id="menu">
+                <h2 class="subtitle">Hantera meny</h2>
+                <div class="menu-list" id="menuContainer">
+                </div>
+            </section>
         </main>
+
+        <!-- JavaScript som hanterar formuläret och menyn -->
         <script src="/admin.882a59c0.js"></script>
     
 <script src="/admin.a43fa255.js"></script></body></html>

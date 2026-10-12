@@ -88,7 +88,7 @@ function displayBookingData(data) {
         const messageElement = document.createElement("td");
         messageElement.textContent = booking.message || " ";
         raw.appendChild(messageElement);
-        // När bokningen skickades (formaterat som svenskt datum)
+        // Visar när bokningen skickades och formaterar till svenskt datum
         const createdElement = document.createElement("td");
         createdElement.textContent = new Date(booking.created).toLocaleDateString("sv-SE");
         raw.appendChild(createdElement);

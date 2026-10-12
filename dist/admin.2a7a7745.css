@@ -11,7 +11,7 @@
   background-color: #fff;
   border-bottom: 1px solid #e8dcc8;
   align-items: center;
-  padding: 1rem 2.5rem;
+  padding: 0 2.5rem;
   display: flex;
   box-shadow: 0 1px 3px #3e2c1c0a;
 }
@@ -27,7 +27,7 @@
 .logo-admin {
   flex-shrink: 0;
   width: auto;
-  height: 60px;
+  height: 100px;
   display: block;
 }
 
@@ -49,9 +49,8 @@
   letter-spacing: .18em;
   text-transform: uppercase;
   border-bottom: 1px solid #0000;
-  padding-bottom: 4px;
   font-family: Inter, sans-serif;
-  font-size: .8rem;
+  font-size: .75rem;
   font-weight: 500;
   text-decoration: none;
   transition: all .3s;
