@@ -360,15 +360,14 @@
 
     /* Mindre text på länkarna */
     .admin-nav-link {
-        font-size: 0.65rem;
+        font-size: 0.5rem;
         letter-spacing: 0.1em;
         padding: 0.4rem 0;
     }
 
     /* Mindre logga ut-knapp */
     .btn-logout {
-        font-size: 0.65rem;
-        padding: 0.4rem 0.75rem;
+        font-size: 0.5rem;
         letter-spacing: 0.12em;
         width: auto;
     }
@@ -431,19 +430,19 @@
 
     /* Ännu mindre logotyp */
     .logo-admin {
-        height: 50px;
+        height: 40px;
     }
 
     /* Ännu mindre text i menyn */
     .admin-nav-link {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
         letter-spacing: 0.08em;
     }
 
     /* Ännu mindre logga ut-knapp */
     .btn-logout {
-        font-size: 0.6rem;
-        padding: 0.35rem 0.6rem;
+        font-size: 0.5rem;
+        padding: 0.35rem;
     }
 
     /* Mindre marginaler */

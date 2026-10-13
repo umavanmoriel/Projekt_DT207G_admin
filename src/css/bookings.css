@@ -93,3 +93,94 @@ body {
     text-align: center;
     margin-bottom: 0.5rem;
 }
+
+/* Kolumn med status */
+.status {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.4rem 0.6rem;
+    white-space: nowrap;
+}
+
+/* Väntande status blir gul */
+.status.pending {
+    color: #8B5E3C;
+    background-color: #FAF3E6;
+}
+
+/* Accepterad status blir grön */
+.status.confirmed {
+    color: #3E5A2E;
+    background-color: #F0F7E8;
+}
+
+/* Avböjd status blir röd */
+.status.cancelled {
+    color: #7A2820;
+    background-color: #FAEBE8;
+}
+
+/* Åtgärdscell */
+.action-cell {
+    display: flex;
+    gap: 0.4rem;
+    white-space: nowrap;
+}
+
+/* Gemensam stil för alla åtgärdsknappar */
+.accept-btn,
+.reject-btn,
+.undo-btn {
+    padding: 0.4rem 0.75rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+    border: 1px solid;
+}
+
+/* Acceptera knapp blir grön */
+.accept-btn {
+    border-color: #6B8E5A;
+    color: #3E5A2E;
+}
+
+/* Hover för acceptera knapp */
+.accept-btn:hover {
+    background-color: #6B8E5A;
+    color: #FFFFFF;
+}
+
+/* Avböj kanpp blir röd */
+.reject-btn {
+    border-color: #F5D9D5;
+    color: #A63A2E;
+}
+
+/* Hover för avböj knapp */
+.reject-btn:hover {
+    background-color: #FAEBE8;
+    border-color: #A63A2E;
+    color: #7A2820;
+}
+
+/* Ångra knapp */
+.undo-btn {
+    border-color: #E0D6C4;
+    color: #8B5E3C;
+}
+/* Hover för ängra knapp */
+.undo-btn:hover {
+    background-color: #FBF8F2;
+    border-color: #C9A227;
+    color: #1F1610;
+}

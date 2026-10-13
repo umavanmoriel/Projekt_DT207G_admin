@@ -69,7 +69,7 @@ function displayBookingData(data) {
 
     // Visar meddelande om inga bokningar finns
     if (data.length === 0) {
-        bookingList.innerHTML = '<tr><td colspan="7" style="text-align: center;">Inga bokningar finns ännu.</td></tr>';
+        bookingList.innerHTML = '<tr><td colspan="9" style="text-align: center;">Inga bokningar finns ännu.</td></tr>';
         return;
     }
 
@@ -105,19 +105,88 @@ function displayBookingData(data) {
 
         // Meddelande eller tomt
         const messageElement = document.createElement("td");
-        messageElement.textContent = booking.message || " ";
+        messageElement.textContent = booking.message || "–";
         raw.appendChild(messageElement);
 
-        // Visar när bokningen skickades och formaterar till svenskt datum
+        // Skickad
         const createdElement = document.createElement("td");
         createdElement.textContent = new Date(booking.created).toLocaleDateString("sv-SE");
         raw.appendChild(createdElement);
+
+        // Status för att visa om bokning är accepterad eller inte
+        const statusElement = document.createElement("td");
+        statusElement.textContent = getStatusText(booking.status);
+        statusElement.className = "status " + (booking.status || "pending");
+        raw.appendChild(statusElement);
+
+        // Åtgärder med knappar acceptera eller avböj
+        const actionElement = document.createElement("td");
+        actionElement.className = "action-cell";
+
+        // Visa bara knappar om bokningen inte redan är hanterad
+        if (!booking.status || booking.status === "pending") {
+            // Acceptera-knapp
+            const acceptBtn = document.createElement("button");
+            acceptBtn.textContent = "Acceptera";
+            acceptBtn.className = "accept-btn";
+            acceptBtn.onclick = () => updateBookingStatus(booking._id, "confirmed");
+            actionElement.appendChild(acceptBtn);
+
+            // Avböj-knapp
+            const rejectBtn = document.createElement("button");
+            rejectBtn.textContent = "Avböj";
+            rejectBtn.className = "reject-btn";
+            rejectBtn.onclick = () => updateBookingStatus(booking._id, "cancelled");
+            actionElement.appendChild(rejectBtn);
+        } else {
+            // Visar "Ångra" om bokningen redan är hanterad 
+            const undoBtn = document.createElement("button");
+            undoBtn.textContent = "Ångra";
+            undoBtn.className = "undo-btn";
+            undoBtn.onclick = () => updateBookingStatus(booking._id, "pending");
+            actionElement.appendChild(undoBtn);
+        }
+
+        raw.appendChild(actionElement);
 
         // Lägger till raden i tabellen
         bookingList.appendChild(raw);
     });
 }
 
+// Översätter status till svenska
+function getStatusText(status) {
+    if (status === "confirmed") return "Accepterad";
+    if (status === "cancelled") return "Avböjd";
+    return "Väntande";
+}
+
+// Uppdaterar status på en bokning
+async function updateBookingStatus(id, status) {
+    try {
+        const token = localStorage.getItem("token");
+
+        const res = await fetch(`http://localhost:3000/api/bookings/${id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer " + token
+            },
+            body: JSON.stringify({ status })
+        });
+
+        if (!res.ok) {
+            alert("Kunde inte uppdatera bokningen");
+            return;
+        }
+
+        // Laddar om tabellen
+        processBookingData();
+    } catch (error) {
+        console.error("Fel vid uppdatering:", error);
+        alert("Kunde inte nå servern");
+    }
+}
 // Eventlistener för att logga ut
 const logoutButton = document.getElementById("logout-button");
 if (logoutButton) {

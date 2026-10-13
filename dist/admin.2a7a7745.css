@@ -313,14 +313,13 @@
   .admin-nav-link {
     letter-spacing: .1em;
     padding: .4rem 0;
-    font-size: .65rem;
+    font-size: .5rem;
   }
 
   .btn-logout {
     letter-spacing: .12em;
     width: auto;
-    padding: .4rem .75rem;
-    font-size: .65rem;
+    font-size: .5rem;
   }
 
   .admin-page .main {
@@ -368,17 +367,17 @@
 
 @media (width <= 480px) {
   .logo-admin {
-    height: 50px;
+    height: 40px;
   }
 
   .admin-nav-link {
     letter-spacing: .08em;
-    font-size: .6rem;
+    font-size: .5rem;
   }
 
   .btn-logout {
-    padding: .35rem .6rem;
-    font-size: .6rem;
+    padding: .35rem;
+    font-size: .5rem;
   }
 
   .admin-page .main {
