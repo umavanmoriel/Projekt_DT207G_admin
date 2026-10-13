@@ -283,4 +283,110 @@
   background-color: #faebe8;
   border-color: #a63a2e;
 }
+
+@media (width <= 768px) {
+  .admin-header {
+    flex-direction: row;
+    align-items: center;
+    padding: .75rem 1rem;
+  }
+
+  .admin-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .logo-admin {
+    height: 55px;
+  }
+
+  .admin-nav-list {
+    flex-direction: row;
+    align-items: center;
+    gap: .75rem;
+    margin-left: auto;
+  }
+
+  .admin-nav-link {
+    letter-spacing: .1em;
+    padding: .4rem 0;
+    font-size: .65rem;
+  }
+
+  .btn-logout {
+    letter-spacing: .12em;
+    width: auto;
+    padding: .4rem .75rem;
+    font-size: .65rem;
+  }
+
+  .admin-page .main {
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .form {
+    padding: 1.25rem 1rem;
+  }
+
+  .form > div {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .75rem;
+  }
+
+  .menu-item-actions {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .edit-btn, .delete-btn {
+    text-align: center;
+    flex: 1;
+  }
+
+  .menu-item-dots {
+    display: none;
+  }
+}
+
+@media (width <= 480px) {
+  .logo-admin {
+    height: 50px;
+  }
+
+  .admin-nav-link {
+    letter-spacing: .08em;
+    font-size: .6rem;
+  }
+
+  .btn-logout {
+    padding: .35rem .6rem;
+    font-size: .6rem;
+  }
+
+  .admin-page .main {
+    padding: 0 .75rem;
+  }
+
+  .form {
+    padding: 1rem .75rem;
+  }
+}
 /*# sourceMappingURL=admin.2a7a7745.css.map */

@@ -326,3 +326,133 @@
     border-color: #A63A2E;
     color: #7A2820;
 }
+/* Responsive design för mindre skärmar (max 768px) */
+@media (max-width: 768px) {
+
+    /* Header med logotyp och meny på samma rad */
+    .admin-header {
+        padding: 0.75rem 1rem;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Navigation med flex-rad och space-between */
+    .admin-nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    /* Mindre logotyp på mobil */
+    .logo-admin {
+        height: 55px;
+    }
+
+    /* Menyn staplas horisontellt men sitter ihop */
+    .admin-nav-list {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.75rem;
+        margin-left: auto;
+    }
+
+    /* Mindre text på länkarna */
+    .admin-nav-link {
+        font-size: 0.65rem;
+        letter-spacing: 0.1em;
+        padding: 0.4rem 0;
+    }
+
+    /* Mindre logga ut-knapp */
+    .btn-logout {
+        font-size: 0.65rem;
+        padding: 0.4rem 0.75rem;
+        letter-spacing: 0.12em;
+        width: auto;
+    }
+
+    /* Main får mindre padding */
+    .admin-page .main {
+        padding: 0 1rem;
+        margin: 1.5rem auto;
+    }
+
+    /* Titel blir mindre */
+    .title {
+        font-size: 1.5rem;
+    }
+
+    /* Underrubrik blir mindre */
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    /* Formulär med mindre padding */
+    .form {
+        padding: 1.25rem 1rem;
+    }
+
+    /* Fälten staplas vertikalt */
+    .form > div {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    /* Menyrader staplas vertikalt */
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    /* Knapparna hamnar under texten */
+    .menu-item-actions {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* Knapparna delar på bredden */
+    .edit-btn,
+    .delete-btn {
+        flex: 1;
+        text-align: center;
+    }
+
+    /* Döljer prickarna på mobil */
+    .menu-item-dots {
+        display: none;
+    }
+}
+
+/* Responsive design för mindre skärmar (max 480px) */
+@media (max-width: 480px) {
+
+    /* Ännu mindre logotyp */
+    .logo-admin {
+        height: 50px;
+    }
+
+    /* Ännu mindre text i menyn */
+    .admin-nav-link {
+        font-size: 0.6rem;
+        letter-spacing: 0.08em;
+    }
+
+    /* Ännu mindre logga ut-knapp */
+    .btn-logout {
+        font-size: 0.6rem;
+        padding: 0.35rem 0.6rem;
+    }
+
+    /* Mindre marginaler */
+    .admin-page .main {
+        padding: 0 0.75rem;
+    }
+
+    /* Kompaktare formulär */
+    .form {
+        padding: 1rem 0.75rem;
+    }
+}
