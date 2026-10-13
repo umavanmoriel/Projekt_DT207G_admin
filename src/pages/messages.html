@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Sidans titel -->
+        <title>Meddelanden</title>
+        <!-- Stilmallar och typsnitt -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/admin.css">
+        <link rel="stylesheet" href="../css/messages.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+    <body class="admin-page">
+        <!-- Sidhuvud med logotyp och navigering -->
+        <header class="admin-header">
+            <nav class="admin-nav">
+                <!-- Logotyp -->
+                <img class="logo-admin" src="../../assets/images/logotyp.png" alt="Vaviorka logotyp" height="44">
+                <!-- Navigeringslänkar och logga ut-knapp -->
+                <ul class="admin-nav-list">
+                    <li class="admin-nav-list-item"><a class="admin-nav-link" href="../pages/admin.html">Hantera meny</a></li>
+                    <li class="admin-nav-list-item"><a class="admin-nav-link" href="../pages/bookings.html">Bordsbokningar</a></li>
+                    <li class="admin-nav-list-item"><a class="admin-nav-link" href="../pages/messages.html">Meddelanden</a></li>
+                    <li><button type="button" class="btn-logout" id="logout-button">Logga ut</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!-- Sidans rubrik -->
+            <h1 class="messages-title">Kontaktmeddelanden</h1>
+
+            <!-- Tabell som visar alla meddelanden -->
+            <div class="table-wrapper">
+                <table class="messages-table">
+                    <!-- Rubrikrad för kolumnerna -->
+                    <thead>
+                        <tr>
+                            <th>Namn</th>
+                            <th>E-post</th>
+                            <th>Ämne</th>
+                            <th>Meddelande</th>
+                            <th>Skickad</th>
+                        </tr>
+                    </thead>
+                    <!-- Rader med meddelanden fylls av JavaScript -->
+                    <tbody id="messageList">
+
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <!-- JavaScript som hämtar och visar meddelanden -->
+        <script src="../js/messages.js"></script>
+    </body>
+</html>

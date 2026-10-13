@@ -1,0 +1,113 @@
+/* Wrapper runt tabellen som ger scroll på små skärmar */
+.table-wrapper {
+    width: 100%;
+    margin-top: 1.5rem;
+    background-color: #FFFFFF;
+    border: 1px solid #E8DCC8;
+    box-shadow: 0 12px 40px rgba(62, 44, 28, 0.08);
+    overflow-x: auto;
+}
+
+/* Själva tabellen */
+.messages-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+}
+
+/* Rubrikraden */
+.messages-table thead {
+    background-color: #1F1610;
+}
+
+/* Rubrikceller */
+.messages-table th {
+    padding: 0.9rem 1rem;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #C9A227;
+    white-space: nowrap;
+}
+
+/* Dataceller */
+.messages-table td {
+    padding: 0.9rem 1rem;
+    color: #3E2C1C;
+    border-bottom: 1px solid #F0E8DA;
+    vertical-align: top;
+}
+
+/* Tar bort kantlinjen på sista raden */
+.messages-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Ljusare bakgrund när man hovrar över en rad */
+.messages-table tbody tr:hover {
+    background-color: #FBF8F2;
+}
+
+/* Meddelandekolumnen */
+.messages-table td:nth-child(4) {
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+/* Felmeddelande i tabellen */
+.messages-table td.error {
+    color: #A63A2E;
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+}
+
+/* Rubrik på sidan */
+.messages-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1F1610;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive design för mindre skärmar (max 750px) */
+@media (max-width: 750px) {
+
+    /* Tabellen blir horisontellt scrollbar */
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    /* Mindre text i tabellen */
+    .messages-table {
+        font-size: 0.8rem;
+    }
+
+    /* Mindre padding i cellerna */
+    .messages-table th,
+    .messages-table td {
+        padding: 0.6rem 0.7rem;
+    }
+
+    /* Ännu mindre på rubriken */
+    .messages-table th {
+        font-size: 0.62rem;
+    }
+
+    /* Meddelandekolumnen bredare på mobil */
+    .messages-table td:nth-child(4) {
+        max-width: 200px;
+    }
+
+    /* Rubriken blir mindre */
+    .messages-title {
+        font-size: 1.5rem;
+    }
+}
