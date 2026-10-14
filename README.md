@@ -1,4 +1,4 @@
-# Restaurang Admin – Administrationsgränssnitt
+# "Vaviorka" Restaurang Admin – Administrationsgränssnitt
 
 Detta repository innehåller koden för ett administrationsgränssnitt till ett fiktivt restaurangföretag. Gränssnittet används av personal för att hantera restaurangens meny, bordsbokningar och kontaktmeddelanden från gäster.
 
