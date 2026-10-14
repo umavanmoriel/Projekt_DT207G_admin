@@ -36,7 +36,7 @@
 
 /* Dataceller */
 .messages-table td {
-    padding: 0.9rem 1rem;
+    padding: 0.9rem;
     color: #3E2C1C;
     border-bottom: 1px solid #F0E8DA;
     vertical-align: top;
@@ -75,6 +75,13 @@
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 0.5rem;
+}
+
+/* Standardbredd för innehållet på publika sidor */
+.main-message {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
 }
 
 /* Responsive design för mindre skärmar (max 750px) */

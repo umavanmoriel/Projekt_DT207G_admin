@@ -12,8 +12,8 @@ body {
   line-height: 1.6;
 }
 
-.main {
-  max-width: 720px;
+.main-booking {
+  max-width: 1200px;
   margin: 3rem auto;
   padding: 0 1.5rem;
 }
@@ -54,7 +54,7 @@ body {
   color: #3e2c1c;
   vertical-align: top;
   border-bottom: 1px solid #f0e8da;
-  padding: .9rem 1rem;
+  padding: .9rem .5rem;
 }
 
 .bookings-table tbody tr:last-child td {
